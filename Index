@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick R. Knowles - Resume</title>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; background-color: #333; font-family: sans-serif; }
+        .mobile-fallback { display: none; color: white; text-align: center; padding: 50px; }
+        #pdf-viewer { width: 100%; height: 100vh; border: none; }
+        
+        /* Show a download link if the screen is small (mobile) */
+        @media (max-width: 768px) {
+            #pdf-viewer { display: none; }
+            .mobile-fallback { display: block; }
+        }
+    </style>
+</head>
+<body>
 
+    <div class="mobile-fallback">
+        <h1>Patrick R. Knowles </h1>
+        <p>Mechanical Engineering, MS [cite: 55]</p>
+        <a href="Knowles_Patrick_Resume-1.pdf" style="color: #00bcff;">Click here to view/download PDF Resume</a>
+    </div>
+
+    <embed 
+        src="Knowles_Patrick_Resume-1.pdf" 
+        type="application/pdf" 
+        id="pdf-viewer"
+    />
+
+</body>
+</html>
